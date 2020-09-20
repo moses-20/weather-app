@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+    background-image: url('./img/weather-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* styling for the home page */
+
+.app{
+    background-color: #345660c7;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.app > h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.menu > * {
+    margin: 0 auto;
+    text-decoration: none;
+    color: orange;
+    font-family: 'Acme', sans-serif;
+}
+
+main{
+    height: 75vh;
+    padding: 20px;
+}
+
+.search-container{
+    background: black none repeat scroll 0 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    padding: 15px;
+    transition: all 0.5s ease 0s;
+}
+
+.search-container > input {
+    background: transparent;
+    border: 0;
+    color: whitesmoke;
+    outline: 0;
+    font-size: 25px;
+}
+
+.search-container > .search-bar {
+    width: 90%;
+}
+
+.info-wrap {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    justify-content: space-around;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -40px;
+}
+
+.location-container > .location {
+    font-weight: bolder;
+}
+
+.location-container > .date {
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.weather-container > .temperature {
+    margin: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.weather-container > .weather {
+    margin: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+span {
+    color: black;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.null-void {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* styling for the about page */
+.about {
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    color: white;   
+}
+
+.about-me > p {
+    font-size: 1.5em;
+}
+
+.about-app > h4 > a {
+    color: orange;
+    text-decoration: none;
 }
