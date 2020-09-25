@@ -43,7 +43,7 @@ function Home() {
           />
           <input
             type='submit'
-            value='Submit'
+            value='Search'
             onClick={search}
           />
         </div>

@@ -55,6 +55,7 @@ main{
     color: whitesmoke;
     outline: 0;
     font-size: 25px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .search-container > .search-bar {
@@ -133,4 +134,53 @@ span {
 .about-app > h4 > a {
     color: orange;
     text-decoration: none;
+}
+
+/* styling for sign up page */
+.sign-wrap {
+    margin: 20 auto;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    justify-content: center;
+    margin: 30px auto;
+    width: 60%;
+}
+
+.signup-form > * {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 3em;
+    color: black;
+    background: transparent;
+    border: 2px solid black ;
+    outline: 0;
+}
+
+.signup-form > .sign-submit {
+    padding: 0;
+    color: orange;
+    text-align: center;
+    font-family: 'handlee';
+}
+
+.signup-form > *::placeholder {
+    color: ghostwhite;
+    font-size: 0.6em;
+    font-family: 'handlee';
+    text-align: center;
+}
+
+.placehold {
+    color: black;
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+.placehold > span {
+    color: orange;
+    font-size: 1em;
 }

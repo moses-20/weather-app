@@ -17,7 +17,7 @@ function App() {
             <Link to='/'> Home </Link>
             <Link to='/about'> About </Link>
             <Link to='/signup'> Sign Up </Link>
-            <Link to='/login'> Log In </Link>
+            <Link to='/login'> History </Link>
           </div>
         </div>
         <Switch>
