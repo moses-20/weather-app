@@ -10,7 +10,7 @@ function About(props) {
                     <p> +233 240 695 050 <br/> connect with Moses on Twitter and Facebook <span> @MosesGameli </span> </p>
                 </div>
                 <div className='about-app'>
-                    <h4> Pre-MEST is a program run by MEST Africa. You can <a href='https://meltwater.org/' target='_blank' rel="noopener noreferrer"> read more here </a>.</h4>
+                    <h4> Pre-MEST is a program run by MEST Africa. You can <a href='https://meltwater.org/' target='_blank' rel='noopener noreferrer'> read more here </a>.</h4>
                 </div>
             </div>
         </main>

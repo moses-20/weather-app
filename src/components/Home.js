@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import keys from "../keys";
+import React, { useState } from 'react';
+import keys from '../keys';
 
 const api = {
   key: keys.API_KEY,
@@ -14,7 +14,7 @@ function Home() {
     return date;
   };
 
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
   const search = (e) => {
@@ -23,7 +23,7 @@ function Home() {
     fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
     .then((res) => res.json())
     .then((result) => {
-        setQuery("");
+        setQuery('');
         setWeather(result);
         console.log(result);
     });
@@ -32,11 +32,11 @@ function Home() {
 
   return (
       <main>
-        <div className="search-container">
+        <div className='search-container'>
           <input
-            type="text"
-            placeholder="Search any city..."
-            className="search-bar"
+            type='text'
+            placeholder='Search any city...'
+            className='search-bar'
             onChange={(e) => setQuery(e.target.value)}
             value={query}
             onKeyPress={e => {if(e.key === 'Enter'){ search(e)}}}
@@ -47,19 +47,19 @@ function Home() {
             onClick={search}
           />
         </div>
-        {typeof weather.main != "undefined" ? (
-          <div className="info-wrap">
-            <div className="location-container">
-              <div className="location">
+        {typeof weather.main != 'undefined' ? (
+          <div className='info-wrap'>
+            <div className='location-container'>
+              <div className='location'>
                 <span>{weather.name}, {weather.sys.country} </span>
               </div>
-              <div className="date"> {dateBuild(new Date())} </div>
+              <div className='date'> {dateBuild(new Date())} </div>
             </div>
-            <div className="weather-container">
-              <div className="temperature">
+            <div className='weather-container'>
+              <div className='temperature'>
                 <h3> temperature <br/> <span>{Math.round(weather.main.temp)}°C</span> </h3>
               </div>
-              <div className="weather">
+              <div className='weather'>
                 <h3> weather <br/> <span>{weather.weather[0].main}</span> </h3>
               </div>
             </div>
